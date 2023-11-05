@@ -1,0 +1,943 @@
+* {
+    font-family: 'Popins', sans-serif;
+    /* letter-spacing: 1px; */
+}
+
+:root {
+    --primary-color: #f6f8fd;
+    --secondary-color: #dc3545;
+    --color-text: #231942;
+    --navbar-color: #ffffff;
+    --navbar-color-text: #000000;
+}
+
+.navbar {
+    font-size: 1rem;
+    position: fixed;
+    width: 100%;
+    top: -100px;
+    background-color: var(--navbar-color);
+    transition: all 2s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-trantition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    z-index: 9999;
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+    box-shadow: 0 10px 10px 0 rgba(124, 124, 124, 0.345);
+}
+
+.nav-space {
+    padding: 0 6rem;
+}
+
+.nav-space img {
+    height: 3rem;
+}
+
+.navnav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar.color-active {
+    background-color: var(--navbar-color);
+    top: 0;
+    box-shadow: 0 10px 10px 0 rgba(124, 124, 124, 0.345);
+}
+
+.navbar .nav-link a {
+    padding: 5px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--navbar-color-text);
+}
+
+.navbar .nav-link a:hover {
+    color: var(--secondary-color);
+}
+
+.navbar .nav-link .active {
+    color: var(--secondary-color);
+}
+
+header {
+    background: rgba(0, 0, 0, 0.4) url("../assets/img/bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    /* background: -webkit-linear-gradient(to left, #f7797d, #fbd786, #c6ffdd); 
+    background: linear-gradient(to left, #f7797d, #fbd786, #c6ffdd);  */
+}
+
+.logo-sekolah {
+    height: 23rem;
+    width: 13rem;
+}
+
+.homepage .header-box h1 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    /* color: var(--color-text); */
+    color: white;
+    animation-name: fadeInUp;
+    animation-duration: 2s;
+    --animation-delay: 0.5s;
+}
+
+.homepage .header-box h1 span {
+    /* color: var(--secondary-color); */
+    font-weight: 700;
+    animation-name: fadeInUp;
+    animation-duration: 2s;
+    --animation-delay: 0.5s;
+}
+
+.homepage .header-box p {
+    line-height: 2;
+    /* color: var(--color-text); */
+    color: white;
+    font-weight: 500;
+    animation-name: fadeInUp;
+    animation-duration: 2s;
+    --animation-delay: 0.5s;
+}
+
+.homepage .header-box img {
+    width: 100%;
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+}
+
+.homepage .header-box button {
+    animation-name: fadeInUp;
+    animation-duration: 2s;
+    --animate-delay: 1.5s;
+}
+
+@media screen and (max-width: 992px) {
+    .homepage .header-box {
+        padding-top: 8rem;
+    }
+    .homepage .header-box img {
+        display: block;
+        width: 400px;
+        margin-inline: auto;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .homepage .header-box h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .homepage .header-box h1 {
+        font-size: 2.4rem;
+    }
+
+    .homepage .header-box p {
+        font-size: 14px;
+    }
+
+    .homepage .header-box img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .homepage .header-box h1 {
+        font-size: 2rem;
+    }
+
+    .homepage .header-box p {
+        font-size: 10px;
+    }
+
+    .homepage .header-box img {
+        width: 250px;
+    }
+}
+
+.home-session {
+    background-image: url("../assets/img/bg2.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.tentang {
+    display: flex;
+    padding: 100px 6rem;
+    gap: 5rem;
+    align-items: center;
+    width: 100%;
+}
+
+.tentang-image img {
+    height: 30rem;
+    width: 45rem;
+    border-radius: 2rem;
+}
+
+.tentang-desc {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    color: var(--color-text);
+}
+
+.btn-tentang {
+    height: 3rem;
+    width: 10rem;
+    background-color: var(--secondary-color);
+    border: none;
+}
+
+.btn-tentang:hover {
+    background-color: var(--color-text);
+}
+
+.tentang-desc h1 span {
+    color: var(--secondary-color);
+}
+
+.video-home {
+    padding: 80px 5rem 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.video {
+    height: 30rem;
+    width: 53.3rem;
+    border-radius: 2rem;
+    box-shadow: 8px 8px 8px 8px rgba(82, 82, 82, 0.345);
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+
+.title {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding-right: 9rem;
+    padding-left: 9rem;
+    padding-bottom: 3rem;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(124, 124, 124, 0.345);
+}
+
+.swiper-pagination-bullet {
+    background-color: #ff5733;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+}
+
+.timeline-title {
+    color: var(--color-text);
+}
+
+.isi {
+    display: flex;
+    flex-direction: column;
+}
+
+.judul {
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.tanggal {
+    font-size: 13px;
+}
+
+.deskrip {
+    font-size: 16px;
+}
+
+.faq {
+    padding: 50px 9rem;
+    background-color: var(--primary-color);
+}
+
+.faq h2 {
+    color: var(--color-text);
+}
+
+.faq .accordion .accordion-button {
+    color: var(--color-text);
+    font-weight: bold;
+    background-color: white;
+    line-height: 1.5;
+}
+
+.faq .accordion .accordion-button:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.faq .accordion .accordion-body {
+    background-color: white;
+}
+
+.footer {
+    padding: 0 9rem;
+    width: 100%;
+}
+
+.footer .row:nth-child(1) .col:nth-child(1) h3 {
+    color: var(--color-text);
+}
+
+.footer .row:nth-child(1) .col:nth-child(1) .desc {
+    color: var(--color-text);
+    font-size: 14px;
+    line-height: 2;
+    padding-right: 3rem;
+    padding-top: 1rem;
+}
+
+.footer .mail a,
+.footer .no a {
+    display: flex;
+    align-items: center;
+    color: black;
+    column-gap: 5px;
+}
+
+.footer .mail a:hover,
+.footer .no a:hover {
+    color: var(--secondary-color);
+}
+
+.footer .row:nth-child(1) .col:nth-child(2) {
+    gap: 10px;
+}
+
+.footer .row:nth-child(1) .col:nth-child(2) a {
+    font-size: 14px;
+    color: black;
+}
+
+.footer .row:nth-child(1) .col:nth-child(2) a:hover {
+    color: var(--secondary-color);
+}
+
+.footer .row:nth-child(1) .col:nth-child(3) a {
+    color: black;
+    font-size: 1.5rem;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.footer .subscribe {
+    display: flex;
+    align-items: center;
+}
+
+.footer .subscribe input {
+    width: 200px;
+    height: 38px;
+    padding: 5px;
+}
+
+.social .yt i {
+    color: #ff0000;
+}
+.social .yt i:hover {
+    color: #a12b2b;
+}
+
+.social .ig i {
+    color: #E1306C;
+}
+.social .ig i:hover {
+    color: #88002d;
+}
+
+.social .wa i {
+    color: #25D366;
+}
+.social .wa i:hover {
+    color: #02752c;
+}
+
+.copyright {
+    border-top: 0.5px solid rgba(0, 0, 0, 0.07);
+    background-color: var(--color-text);
+}
+
+.copyright p {
+    color: white;
+}
+
+.faq-page {
+    padding-top: 110px;
+    padding-bottom: 110px;
+    background-color: var(--primary-color);
+}
+
+.syaratketen-page {
+    background-color: var(--primary-color);
+}
+
+.syaratketen-page .syaratketentuan {
+    background-color: var(--primary-color);
+    padding-top: 170px;
+}
+
+.syaratketen-page .syaratketentuan p {
+    line-height: 2;
+}
+
+.header-struktur {
+    display: flex;
+    height: 35rem;
+    background: rgba(0, 0, 0, 0.4) url("../assets/img/bg4.png");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+}
+
+.main-struktur {
+    background-image: url("../assets/img/bg2.png");
+    background-size: cover;
+    background-position: center;
+    /* background-color: var(--primary-color); */
+    width: 100%;
+    margin: 0;
+}
+
+.struktur {
+    display: flex;
+    flex-direction: column;
+}
+
+.struktur-loc {
+    background-color: var(--color-text);
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.struktur-loc p {
+    color: var(--navbar-color);
+    display: flex;
+    align-items: center;
+}
+
+.struktur-loc a {
+    display: flex;
+}
+
+.lokasi {
+    color: var(--navbar-color);
+}
+
+.beranda {
+    margin-left: 10rem;
+    color: var(--secondary-color);
+}
+
+.struktural p {
+    height: 100%;
+    color: rgb(187, 187, 187);
+    letter-spacing: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 7.5rem;
+}
+
+.nav-struktur {
+    display: flex;
+    width: 100%;
+    height: 30rem;
+}
+
+.gambar-struktur {
+    display: flex;
+    justify-content: center;
+}
+
+.gambar-struktur img {
+    height: 40rem;
+    width: 85%;
+}
+
+.sejarah {
+    padding: 0 9rem;
+    text-align: justify;
+    padding-bottom: 3rem;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10rem 50px;
+    gap: 2rem;
+    background-color: var(--primary-color);
+}
+
+.contact-dua {
+    display: flex;
+}
+
+.contact-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 30rem;
+    color: var(--color-text);
+}
+
+.contact-desc p {
+    width: 80%;
+    font-size: 16px;
+}
+
+.contact-form {
+    height: 100%;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    background-color: var(--navbar-color);
+}
+
+.button-contact {
+    height: 3.5rem;
+    width: 13rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+}
+
+.icon {
+    font-size: 1.5rem;
+}
+
+.form-satu {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+
+.form-email {
+    width: 100%;
+}
+
+.form-nomor {
+    width: 100%;
+}
+
+.prestasi-session {
+    padding: 100px 9.5rem;
+}
+
+.prestasi {
+    display: flex;
+    gap: 1rem;
+    padding-inline: 10px;
+}
+
+.prestasi-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.prestasi-desc p {
+    width: 85%;
+}
+
+.gambar-container img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(124, 124, 124, 0.345);
+    padding: 1rem;
+}
+
+.gambar-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
+    border: none;
+    background-color: transparent;
+}
+
+.budaya-session {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 100px 0;
+}
+
+.budaya-desc {
+    color: var(--color-text);
+}
+
+.budaya-list {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
+    border: none;
+    margin: 0;
+    background-color: transparent;
+    padding: 0 10rem;
+}
+
+.budaya-list-items {
+    display: flex;
+    padding: 0;
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 5px 5px rgba(124, 124, 124, 0.345);
+}
+
+.budaya-body {
+    padding: 0;
+}
+
+.budaya-list-items img {
+    height: 15rem;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.my-custom-swal-content {
+    border-radius: 2rem;
+}
+
+.my-custom-swal-image {
+    margin: 0;
+}
+
+.slogan-session {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    background: rgba(0, 0, 0, 0.4) url("../assets/img/bg5.jpg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    color: var(--navbar-color);
+}
+
+.slogan-session h4 {
+    letter-spacing: 2px;
+}
+
+.visimisi-session {
+    padding: 50px 10rem 70px;
+}
+
+.visimisi {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.header-jurusan {
+    display: flex;
+    height: 35rem;
+}
+
+.swiper-slide-img img {
+    height: 35rem;
+    width: 40rem;
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    /* background-image: url("../assets/img/bg2.png");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    background-attachment: fixed; */
+    background: -webkit-linear-gradient(to left, #0174BE, #0C356A, #231942);
+    background: linear-gradient(to left, #0174BE, #0C356A,  #231942);
+
+}
+
+.slider-item {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s ease;
+    padding: 10rem;
+    gap: 2rem;
+    height: 100%;
+}
+
+.slider-item .judul {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.slider-item .deskrip {
+    font-size: 16px;
+    color: #777;
+}
+
+.slider-item-btn {
+    background-color: #007bff;
+    color: #fff;
+    width: 30%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    display: flex;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-jurusan li {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.struktur-loc p {
+    margin: 0 10px;
+}
+
+.jurusan-isi {
+    color: var(--navbar-color);
+}
+
+.jurusan-page {
+    background-image: url("../assets/img/bg2.png");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+}
+
+.jurusan-session {
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    padding: 50px 10rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.jurusan-loc {
+    background-color: var(--color-text);
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.jurusan-smk {
+    border: 2px solid var(--color-text);
+    border-radius: 1rem;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+.jurusan-smk:hover {
+    box-shadow: 5px 5px 5px 5px rgba(124, 124, 124, 0.345);
+}
+
+.logo-img {
+    height: 5rem;
+}
+
+.jurusan-loc p {
+    color: white;
+}
+
+.jurusan-desc {
+    gap: 1rem;
+}
+
+.jurusan-images {
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 30px;
+}
+
+.jurusan-images img {
+    height: 15rem;
+    width: 20rem;
+}
+
+.eskul-page {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    top: 2rem;
+    padding: 0 3rem;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+    /* box-shadow: 5px 10px 10px 5px #2319424a; */
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+
+.eskul-session {
+    background: rgba(0, 0, 0, 0.4) url("../assets/img/bg5.jpg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    height: 100%;
+    border-radius: 2rem;
+    padding: 0 4rem;
+}
+
+.eskul-desc {
+    display: flex;
+    height: 8rem;
+    background-color: var(--navbar-color);
+    border: 0.5px solid #231942;
+    border-radius: 2rem;
+    position: relative;
+    top: 7rem;
+    box-shadow: 5px 10px 10px 5px rgba(84, 84, 84, 0.345);
+    padding: 0 3rem;
+}
+
+.eskuls {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    padding-top: 7rem;
+}
+
+.kumpulan-desc {
+    gap: 1rem;
+}
+
+.desc-eskul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    color: var(--primary-color);
+}
+
+.desc-eskul p {
+    width: 50%;
+}
+
+.eskuls h1 {
+    font-size: 5rem;
+}
+
+.btn-eskul {
+    width: 20%;
+    height: 3rem;
+    background-color: var(--primary-color);
+    color: var(--color-text);
+    border: none;
+}
+
+.img-eskul {
+    padding: 3rem;
+}
+
+.eskul-lain {
+    display: flex;
+    height: 8rem;
+}
+
+.keterangan {
+    align-items: center;
+    justify-content: center;
+}
+
+.eskul-judul {
+    border-bottom: 2px solid #000000;
+}
+
+.desc-satu,
+.desc-dua {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.164);
+}
+
+.desc-satu p,
+.desc-dua p {
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.desc-tiga-ket {
+    background-color: rgba(128, 128, 128, 0.164); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 0 0 10px;
+}
+
+.desc-tiga-ket p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.desc-tiga-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-text);
+    color: var(--navbar-color);
+    width: 50%;
+    border-radius: 0 10px 10px 0;
+}

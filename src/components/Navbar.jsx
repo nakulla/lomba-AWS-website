@@ -53,7 +53,7 @@ const NavbarComponent = () => {
                             }
                         </Nav>
                         <div className='text-center'>
-                            <button className='btn btn-outline-danger rounded-1'>Jelajahi</button>
+                            <a href="https://www.smkn1-cmi.sch.id/"><button className='btn btn-outline-danger rounded-1' >Jelajahi</button></a>
                         </div>
                     </Navbar.Collapse>
                 </Container>

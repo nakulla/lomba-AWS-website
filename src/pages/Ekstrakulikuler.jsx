@@ -11,6 +11,8 @@ import voli from '../assets/img/eskul/voli.jpg'
 import nk from '../assets/img/eskul/japan.jpeg'
 import pmr from '../assets/img/eskul/pmr.jpg'
 import pks from '../assets/img/eskul/pks.jpg'
+import silat from '../assets/img/eskul/silat.jpg'
+import taekwondo from '../assets/img/eskul/taekwondo.jpg'
 
 function Ekstrakulikuler() {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -20,54 +22,52 @@ function Ekstrakulikuler() {
     const slideContent = [
         {
             title: 'English Club',
-            desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dicta cumque t' +
-                    'otam commodi illum similique eveniet fugit! Similique, perferendis nesciunt.',
+            desc: 'Klub Bahasa Inggris',
             background: `url(${ec})`
         }, {
             title: 'Basket Ball',
-            desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dicta cumque t' +
-                    'otam commodi illum similique eveniet fugit! Similique, perferendis nesciunt.',
+            desc: 'Ekstrakulikuler Permainan Bola Basket',
             background: `url(${basket})`
         }, {
             title: 'Futsal',
-            desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dicta cumque t' +
-                    'otam commodi illum similique eveniet fugit! Similique, perferendis nesciunt.',
+            desc: 'Ekstrakulikuler Permainan Bola Futsal',
             background: `url(${futsal})`
         }, {
             title: 'American Football',
-            desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dicta cumque t' +
-                    'otam commodi illum similique eveniet fugit! Similique, perferendis nesciunt.',
+            desc: 'Ekstrakulikuler Permainan Sepak Bola Amerika',
             background: `url(${american})`
         }, {
             title: 'Pramuka',
-            desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dicta cumque t' +
-                    'otam commodi illum similique eveniet fugit! Similique, perferendis nesciunt.',
+            desc: 'Ekstrakulikuler Pramuka',
             background: `url(${pramuka})`
         }, {
             title: 'Seni Gitar Pembangunan',
-            desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dicta cumque t' +
-                    'otam commodi illum similique eveniet fugit! Similique, perferendis nesciunt.',
+            desc: 'Klub Seni Gitar Pembangunan',
             background: `url(${sgp})`
         }, {
             title: 'Voli',
-            desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dicta cumque t' +
-                    'otam commodi illum similique eveniet fugit! Similique, perferendis nesciunt.',
+            desc: 'Ekstrakulikuler Permainan Bola Voli',
             background: `url(${voli})`
         }, {
             title: 'Nihon Kyosanto ',
-            desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dicta cumque t' +
-                    'otam commodi illum similique eveniet fugit! Similique, perferendis nesciunt.',
+            desc: 'Klub Bahasa Inggris',
             background: `url(${nk})`
         }, {
             title: 'PMR',
-            desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dicta cumque t' +
-                    'otam commodi illum similique eveniet fugit! Similique, perferendis nesciunt.',
+            desc: 'Organisasi Palang Merah Remaja SMKN 1 Cimahi',
             background: `url(${pmr})`
         }, {
             title: 'PKS',
-            desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dicta cumque t' +
-                    'otam commodi illum similique eveniet fugit! Similique, perferendis nesciunt.',
+            desc: 'Organisasi Patroli Keamanan Sekolah SMKN 1 Cimahi',
             background: `url(${pks})`
+        }, {
+            title: 'Pencak Silat',
+            desc: 'Ekstrakulikuler Seni Bela Diri Pencak Silat',
+            background: `url(${silat})`
+        }, {
+            title: 'Taekwondo',
+            desc: 'Ekstrakulikuler Seni Bela Diri Taekwondo',
+            background: `url(${taekwondo})`
         }
     ];
 
@@ -125,7 +125,7 @@ function Ekstrakulikuler() {
                 <Col className='d-flex flex-column'>
                     <Col className='eskuls'>
                         <Col className='desc-eskul'>
-                            <h1 className='fw-bold'>
+                            <h1 className='eskul-h1 fw-bold'>
                                 {/* Basket
                                 <span
                                     style={{
@@ -134,22 +134,19 @@ function Ekstrakulikuler() {
                                 }
                                 {slideContent[currentIndex].title}
                             </h1>
-                            <p>{slideContent[currentIndex].desc}</p>
-                            <Button variant='primary' className='btn-eskul'>
-                                Daftar Sekarang!
-                            </Button>
+                            <p className='eskul-p'>{slideContent[currentIndex].desc}</p>
                         </Col>
                     </Col>
-                    <Col className='eskul-lain'>
+                    <div className='eskul-lain'>
                         <Col className='eskul-desc d-flex flex-column'>
-                            <Col className='d-flex eskul-judul'>
-                                <Col className='d-flex keterangan'>
-                                    <p className='text-center mt-3'>{slideContent[currentIndex].title}</p>
+                            <div className='d-flex eskul-judul'>
+                                <Col className='d-flex keterangan mt-2'>
+                                    <p className='text-center fw-bold judul-eskul'>{slideContent[currentIndex].title}</p>
                                 </Col>
-                                <Col>
-                                    <p className='text-center mt-3'>SMK NEGERI 1 CIMAHI</p>
+                                <Col className='d-flex eskul-sekolah mt-2'>
+                                    <p className='text-center'>SMK NEGERI 1 CIMAHI</p>
                                 </Col>
-                            </Col>
+                            </div>
                             <Col className='d-flex text-center align-items-center kumpulan-desc'>
                                 <Col className='desc-satu'>
                                     <p>Lorem ipsum dolor sit amet.</p>
@@ -157,17 +154,17 @@ function Ekstrakulikuler() {
                                 <Col className='desc-dua'>
                                     <p>Lorem ipsum dolor sit amet.</p>
                                 </Col>
-                                <Col className='d-flex desc-tiga'>
+                                <div className='d-flex desc-tiga'>
                                     <Col className='desc-tiga-ket'>
                                         <p className='mt-3'>Lorem ipsum.</p>
                                     </Col>
-                                    <Col className='desc-tiga-logo'>
+                                    <div className='desc-tiga-logo'>
                                         <i className='fw-bold fa-solid fa-search icon'></i>
-                                    </Col>
-                                </Col>
+                                    </div>
+                                </div>
                             </Col>
                         </Col>
-                    </Col>
+                    </div>
                 </Col>
             </Row>
         </div>

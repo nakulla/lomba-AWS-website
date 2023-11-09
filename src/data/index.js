@@ -266,57 +266,43 @@ export const dataSwiper = [
     {
         id: 1,
         image: People1,
-        name: "25 November 2023",
-        title: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, doloremq" +
-                "ue.",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod" +
-                " eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesci" +
-                "unt ut laborum harum, vel optio corporis voluptatem?"
+        name: "Tahun 1969",
+        title: "Awal Pembangunan",
+        desc: "Awal pembangunan gedung pada area seluas 3,4 hektar."
     }, {
         id: 2,
         image: People2,
-        name: "25 November 2023",
-        title: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, doloremq" +
-                "ue.",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod" +
-                " eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesci" +
-                "unt ut laborum harum, vel optio corporis voluptatem?"
+        name: "Tahun 1974",
+        title: "Penerimaan Siswa Baru Angkatan 1",
+        desc: "Penrimaan siswa baru angkatan ke-satu." +
+                " Dengan pola pendidikan 4 tahun terdapat 3 jurusan saat itu, diantaranya:" + 
+                " Teknik Elektronika," +
+                " Teknik Listrik Industri," +
+                " dan Teknik Pendinginan."
     }, {
         id: 3,
         image: People3,
-        name: "25 November 2023",
-        title: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, doloremq" +
-                "ue.",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod" +
-                " eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesci" +
-                "unt ut laborum harum, vel optio corporis voluptatem?"
+        name: "Tahun 1977",
+        title: "Peresmian pada 24 Maret 1977 dan Jurusan Baru Instrumentasi Industri",
+        desc: "Peresmian sekolah dengan nama STM Pembangunan Bandung." +
+                " Sekaligus penambahan jurusan, yaitu jurusan Instrumentasi Industri."
     }, {
         id: 4,
         image: People1,
-        name: "25 November 2023",
-        title: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, doloremq" +
-                "ue.",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod" +
-                " eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesci" +
-                "unt ut laborum harum, vel optio corporis voluptatem?"
+        name: "Tahun 1997",
+        title: "Berubah Nama Menjadi SMK Negeri Cimahi - Bandung dan jurusan baru",
+        desc: "Perubahan nama dari STM Pembangunan Bandung menjadi SMK Negeri Cimahi - Bandung." +
+                " Selain itu bertambahnya jurusan baru, diantaranya: " +
+                " Kontrol Proses dan Kontrol Mekanik (Dipecah dari Instrumentasi Industri)," +
+                " Teknik Elektronika Industri & Komputer (dari Teknik Elektronika)" +
+                " Teknik Pendinginan & Tata Udara (dari Teknik Pendinginan)," +
+                " dan Teknik Transmisi."
     }, {
         id: 5,
         image: People2,
-        name: "25 November 2023",
-        title: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, doloremq" +
-                "ue.",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod" +
-                " eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesci" +
-                "unt ut laborum harum, vel optio corporis voluptatem?"
-    }, {
-        id: 6,
-        image: People3,
-        name: "25 November 2023",
-        title: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, doloremq" +
-                "ue.",
-        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod" +
-                " eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesci" +
-                "unt ut laborum harum, vel optio corporis voluptatem?"
+        name: "Tahun 2002",
+        title: "Berubah Nama Menjadi SMK Negeri Cimahi",
+        desc: "Perubahan nama dari SMK Negeri Cimahi - Bandung menjadi SMK Negeri Cimahi."
     }
 ];
 

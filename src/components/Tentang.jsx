@@ -17,7 +17,7 @@ function Tentang() {
             </Col>            
         </Row>
         <Row className='tentang-image'>
-            <img src={sekolah} alt="sekolah-image" />
+            <img src={sekolah} alt="sekolah-image" className='img-tentang' />
         </Row>
         </Container>
     </div>

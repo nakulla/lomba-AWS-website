@@ -33,7 +33,7 @@ function Budaya() {
             <Row>
                 <Col className='budaya-desc mb-5'>
                     <h2 className='text-center fw-bold'>Budaya SMKN <span style={{color:'#dc3545'}}>1 CIMAHI</span></h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, nulla.</p>
+                    <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, nulla.</p>
                 </Col>
             </Row>
             <Row className='budaya-list'>
